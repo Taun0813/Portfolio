@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio cá nhân của Backend Developer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <header class="nav">
+    <a href="#top" class="logo" id="logo"></a>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">experience</a>
+      <a href="#contact">contact</a>
+      <button id="theme" aria-label="Đổi giao diện sáng/tối">◐</button>
+      <button id="print" title="Lưu thành PDF CV">cv.pdf ⤓</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="badge" id="badge"></p>
+      <div class="term" aria-label="Giới thiệu">
+        <div class="term-bar"><i></i><i></i><i></i><span>~/portfolio</span></div>
+        <div class="term-body">
+          <p class="cmd"><span class="ps">$</span> whoami</p>
+          <h1 id="hero-name"></h1>
+          <p class="cmd"><span class="ps">$</span> cat role.txt</p>
+          <p class="role" id="hero-role"></p>
+          <p class="cmd"><span class="ps">$</span> echo $TAGLINE</p>
+          <p class="tagline" id="hero-tagline"></p>
+          <p class="cmd"><span class="ps">$</span> <span class="caret"></span></p>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#projects">Xem dự án →</a>
+        <a class="btn" href="#contact">Liên hệ</a>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="track" id="marquee"></div></div>
+
+    <section id="about" class="reveal"><h2>about</h2><div id="about-body"></div><div id="skills"></div></section>
+    <section id="projects" class="reveal"><h2>projects</h2><div class="grid" id="project-list"></div></section>
+    <section id="experience" class="reveal"><h2>experience</h2><div id="exp-list"></div></section>
+    <section id="contact" class="reveal"><h2>contact</h2><div id="contact-body"></div></section>
+  </main>
+
+  <footer><span id="year"></span></footer>
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

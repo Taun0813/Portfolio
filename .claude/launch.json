@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "portfolio", "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe", "runtimeArgs": [".claude/server.js"], "port": 5173 }
+  ]
+}
