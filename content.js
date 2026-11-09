@@ -2,89 +2,110 @@
 window.CONTENT = {
   name: "Yen Bui Thai Tuan",
   role: "Backend Developer",
-  tagline: "Xây dựng hệ thống backend Java/Spring Boot nhanh, ổn định và dễ mở rộng.",
   location: "TP. Hồ Chí Minh",
-  available: true, // hiện chấm xanh "Đang nhận việc"
-  about: [
-    "Backend Developer có kinh nghiệm thực tế trong phát triển và tối ưu hệ thống có khả năng mở rộng bằng Java 17 và Spring Boot: xây dựng RESTful API, xử lý bất đồng bộ với RabbitMQ, batch job và tối ưu cơ sở dữ liệu với MySQL, QueryDSL.",
-    "Hiện làm Backend Developer tại VietBank, tập trung vào hệ thống thanh toán: đối soát giao dịch, tích hợp đối tác và tự động hóa vận hành. Nắm vững clean architecture, tối ưu hiệu năng và thiết kế hệ thống backend."
+  available: true, // hiện chấm xanh "Sẵn sàng trao đổi cơ hội mới"
+  headline: "Xin chào, mình làm backend cho hệ thống thanh toán.",
+  intro: "Mình là Yen Bui Thai Tuan, hiện làm Backend Developer tại VietBank. Mình viết dịch vụ bằng Java và Spring Boot, và đang cùng nhóm xây các job đối soát và quy trình tự động.",
+  cv: "", // ví dụ "cv.pdf" nếu bạn đặt file CV vào thư mục này (nhớ cân nhắc số điện thoại trong CV)
+  snapshot: [
+    ["hiện tại", "VietBank"],
+    ["lĩnh vực", "Thanh toán"],
+    ["công nghệ", "Java · Spring Boot"],
+    ["hạ tầng", "K8s · Docker"]
   ],
-  skills: {
-    "Ngôn ngữ": ["Java", "Python"],
-    "Backend": ["Spring Boot", "RESTful API", "Microservices", "Event-Driven Architecture"],
-    "Khác": ["MySQL", "RabbitMQ", "Docker", "Kubernetes", "SFTP"]
+  about: {
+    paragraphs: [
+      "Mình bắt đầu làm backend từ kỳ thực tập tại HD Bank cuối năm 2024, sau đó làm tiếp ở XperC và hiện ở VietBank. Mỗi nơi giúp mình học thêm một mảng: microservices và bảo mật, tối ưu truy vấn và xử lý bất đồng bộ, rồi chạy job trên Kubernetes.",
+      "Mình thích những việc có kết quả nhìn thấy được, như rút ngắn thời gian phản hồi của API hay bớt một thao tác thủ công cho đội vận hành. Mình vẫn đang học hỏi từng ngày và rất mong được làm việc cùng những người giỏi hơn mình."
+    ],
+    facts: [
+      ["Vị trí", "Backend Developer"],
+      ["Học vấn", "Sai Gon University, 2021 – 2026"],
+      ["Khu vực", "TP. Hồ Chí Minh"],
+      ["Ngôn ngữ", "Java, Python"]
+    ]
   },
-  projects: [
-    {
-      title: "Job đối soát giao dịch với VNPay",
-      desc: "Xây dựng job đối soát chạy định kỳ bằng Kubernetes CronJob, trao đổi file đối soát với đối tác qua SFTP.",
-      tags: ["Java", "Kubernetes CronJob", "SFTP", "VNPay"],
-      live: "",
-      repo: ""
-    },
-    {
-      title: "Tự động xử lý tài khoản thanh toán không hợp lệ",
-      desc: "Xây dựng cơ chế tự động phát hiện và xử lý các tài khoản thanh toán không hợp lệ, giảm thao tác thủ công cho vận hành (dự án nội bộ công ty).",
-      tags: ["Java", "Spring Boot", "Automation"],
-      live: "",
-      repo: ""
-    },
-    {
-      title: "Hệ thống quản lý công ty — XperC",
-      desc: "Tối ưu RESTful API với QueryDSL và MySQL, giảm thời gian phản hồi từ 2s xuống 600ms; duy trì API dưới 500ms nhờ tối ưu truy vấn và bộ nhớ.",
-      tags: ["Java 17", "Spring Boot", "MySQL", "QueryDSL"],
-      live: "",
-      repo: ""
-    },
-    {
-      title: "Xử lý bất đồng bộ & batch job",
-      desc: "Triển khai xử lý bất đồng bộ với RabbitMQ, batch job chạy theo lịch, quản lý migration CSDL bằng Liquibase và xử lý các vấn đề request/transaction đồng thời.",
-      tags: ["RabbitMQ", "Liquibase", "Batch"],
-      live: "",
-      repo: ""
-    },
-    {
-      title: "Microservices tại HD Bank",
-      desc: "Tham gia phát triển và triển khai microservices với Spring Cloud, Eureka, API Gateway; bảo mật bằng OAuth2 và JWT; cache Redis, đóng gói bằng Docker Compose.",
-      tags: ["Spring Cloud", "OAuth2/JWT", "Redis", "Docker"],
-      live: "",
-      repo: ""
-    }
-  ],
   experience: [
     {
       period: "08/2026 – nay",
       title: "Backend Developer",
       org: "VietBank",
-      points: [
-        "Phát triển và vận hành các dịch vụ backend cho hệ thống thanh toán.",
-        "Xây dựng job đối soát với VNPay bằng Kubernetes CronJob, trao đổi file qua SFTP.",
-        "Xây dựng chức năng tự động xử lý tài khoản thanh toán không hợp lệ."
-      ]
+      desc: "Làm việc trong hệ thống thanh toán: viết job đối soát với VNPay bằng K8s CronJob và SFTP, xây quy trình tự động xử lý tài khoản thanh toán không hợp lệ."
     },
     {
       period: "01/2026 – 07/2026",
-      title: "Internship Backend Dev",
+      title: "Backend Intern",
       org: "XperC",
-      points: [
-        "Phát triển hệ thống quản lý công ty bằng Java 17 và Spring Boot.",
-        "Tối ưu RESTful API với QueryDSL và MySQL, giảm response time từ 2s xuống 600ms.",
-        "Triển khai xử lý bất đồng bộ với RabbitMQ và batch job theo lịch; quản lý migration bằng Liquibase."
-      ]
+      desc: "Phát triển hệ thống quản lý công ty bằng Java 17 và Spring Boot; tối ưu API, xử lý bất đồng bộ với RabbitMQ, batch job và migration bằng Liquibase."
     },
     {
       period: "12/2024 – 03/2025",
-      title: "Internship Backend Dev",
+      title: "Backend Intern",
       org: "HD Bank",
-      points: [
-        "Tham gia code review, debug và tuning hiệu năng; làm việc với PostgreSQL, MySQL, thiết kế data model.",
-        "Hỗ trợ phát triển microservices với Spring Cloud, Eureka, API Gateway; bảo mật OAuth2 và JWT.",
-        "Thiết kế schema MongoDB/CSDL quan hệ, cache với Redis, chạy đa container bằng Docker Compose."
+      desc: "Tham gia code review, debug và tuning hiệu năng; hỗ trợ phát triển microservices với Spring Cloud, Eureka, API Gateway, bảo mật OAuth2 và JWT, cache Redis."
+    }
+  ],
+  // Dự án nhóm theo nơi làm
+  projects: [
+    {
+      place: "VietBank",
+      period: "08/2026 – nay",
+      items: [
+        {
+          title: "Job đối soát giao dịch với VNPay",
+          flow: ["Trao đổi file qua SFTP", "K8s CronJob chạy định kỳ", "Đối soát giao dịch"],
+          points: [
+            "Viết job đối soát chạy theo lịch bằng Kubernetes CronJob.",
+            "Dùng SFTP làm nơi trao đổi file đối soát với đối tác."
+          ],
+          tags: ["Java", "Kubernetes CronJob", "SFTP"]
+        },
+        {
+          title: "Tự động xử lý tài khoản thanh toán không hợp lệ",
+          note: "Dự án nội bộ của công ty nên mình chỉ mô tả ở mức tổng quan.",
+          points: [
+            "Xây quy trình tự động phát hiện và xử lý các tài khoản thanh toán không hợp lệ.",
+            "Giúp đội vận hành đỡ phải xử lý thủ công."
+          ],
+          tags: ["Java", "Spring Boot", "Automation"]
+        }
+      ]
+    },
+    {
+      place: "XperC",
+      period: "01/2026 – 07/2026",
+      items: [
+        {
+          title: "Tối ưu API cho hệ thống quản lý công ty",
+          desc: "Mình tối ưu truy vấn bằng QueryDSL và MySQL, kết hợp xử lý bất đồng bộ với RabbitMQ và batch job theo lịch, quản lý migration bằng Liquibase.",
+          bars: [["Thời gian phản hồi trước", "2s", 100], ["Sau khi tối ưu", "600ms", 30]],
+          tags: ["Java 17", "Spring Boot", "QueryDSL", "RabbitMQ", "Liquibase"],
+          wide: true
+        }
+      ]
+    },
+    {
+      place: "HD Bank",
+      period: "12/2024 – 03/2025",
+      items: [
+        {
+          title: "Hỗ trợ phát triển microservices",
+          desc: "Mình tham gia xây dựng và triển khai các dịch vụ với Spring Cloud, Eureka và API Gateway; làm việc với OAuth2 và JWT để bảo mật API, dùng Redis để cache và Docker Compose để chạy nhiều container.",
+          tags: ["Spring Cloud", "OAuth2 / JWT", "Redis", "Docker Compose"],
+          wide: true
+        }
       ]
     }
   ],
+  skills: {
+    "Ngôn ngữ": ["Java", "Python"],
+    "Backend": ["Spring Boot", "RESTful API", "Microservices", "Event-Driven"],
+    "Dữ liệu & Messaging": ["MySQL", "RabbitMQ"],
+    "Hạ tầng": ["Docker", "Kubernetes", "SFTP"]
+  },
   contact: {
     email: "yentuan130803@gmail.com",
-    github: "https://github.com/Taun0813",
+    github: "",   // điền link GitHub nếu có
+    linkedin: ""  // điền link LinkedIn nếu có
   }
 };
