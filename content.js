@@ -4,18 +4,18 @@ window.CONTENT = {
   role: "Backend Developer",
   location: "TP. Hồ Chí Minh",
   available: true, // hiện chấm xanh "Sẵn sàng trao đổi cơ hội mới"
-  headline: "Xin chào, mình làm backend cho hệ thống thanh toán.",
-  intro: "Mình là Yen Bui Thai Tuan, hiện làm Backend Developer tại VietBank. Mình viết dịch vụ bằng Java và Spring Boot, và đang cùng nhóm xây các job đối soát và quy trình tự động.",
+  headline: "Xin chào, mình là Thái Tuấn, một Backend Developer tại VietBank",
+  intro: "Mình viết dịch vụ bằng Java và Spring Boot, và đang cùng nhóm xây các job đối soát và quy trình tự động.",
   cv: "", // ví dụ "cv.pdf" nếu bạn đặt file CV vào thư mục này (nhớ cân nhắc số điện thoại trong CV)
   snapshot: [
     ["hiện tại", "VietBank"],
-    ["lĩnh vực", "Thanh toán"],
+    ["lĩnh vực", "Fullstack"],
     ["công nghệ", "Java · Spring Boot"],
     ["hạ tầng", "K8s · Docker"]
   ],
   about: {
     paragraphs: [
-      "Mình bắt đầu làm backend từ kỳ thực tập tại HD Bank cuối năm 2024, sau đó làm tiếp ở XperC và hiện ở VietBank. Mỗi nơi giúp mình học thêm một mảng: microservices và bảo mật, tối ưu truy vấn và xử lý bất đồng bộ, rồi chạy job trên Kubernetes.",
+      "Mình bắt đầu làm backend từ kỳ thực tập tại HD Bank cuối năm 2024, sau đó làm tiếp ở XperC và hiện ở VietBank. Mỗi nơi giúp mình học thêm một mảng: microservices và bảo mật, tối ưu truy vấn và xử lý bất đồng bộ.",
       "Mình thích những việc có kết quả nhìn thấy được, như rút ngắn thời gian phản hồi của API hay bớt một thao tác thủ công cho đội vận hành. Mình vẫn đang học hỏi từng ngày và rất mong được làm việc cùng những người giỏi hơn mình."
     ],
     facts: [
@@ -105,7 +105,6 @@ window.CONTENT = {
   },
   contact: {
     email: "yentuan130803@gmail.com",
-    github: "",   // điền link GitHub nếu có
-    linkedin: ""  // điền link LinkedIn nếu có
+    github: "https://github.com/Taun0813",   // điền link GitHub nếu có
   }
 };
